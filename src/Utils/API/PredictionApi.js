@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 export const Strokepredictor = async (data) => {
-  const useData = await axios.post("http://localhost:5000/api/v1/predict/predict_stroke_risk", data, {
+  const useData = await axios.post("https://neurogenai-backend.onrender.com/api/v1/predict/predict_stroke_risk", data, {
     headers: {
       "Content-Type": "application/json",
     },
@@ -36,7 +36,7 @@ export const StrokeRecommendations = async (data) => {
 //     }
 //   ]
 // }
-  const useData = await axios.post("http://localhost:5000/api/v1/predict/getStrokeRecommendations", data, {
+  const useData = await axios.post("https://neurogenai-backend.onrender.com/api/v1/predict/getStrokeRecommendations", data, {
     headers: {
       "Content-Type": "application/json",
     },
@@ -45,7 +45,7 @@ export const StrokeRecommendations = async (data) => {
 };
 
 export const StrokeAssementdata = async (data) => {
-  const response = await axios.get(`http://localhost:5000/api/v1/predict/predictions/${data}`);
+  const response = await axios.get(`https://neurogenai-backend.onrender.com/api/v1/predict/predictions/${data}`);
   if (response.status === 200) {
     return response.data;
   } else {

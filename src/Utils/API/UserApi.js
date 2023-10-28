@@ -14,7 +14,7 @@ export const UpdateUser = async (data) => {
   // country,
   // console.log(data);
   const useData = await axios.patch(
-    "http://localhost:5000/api/v1/users/updateuser",
+    "https://neurogenai-backend.onrender.com/api/v1/users/updateuser",
     data,
     {
       headers: {
@@ -28,7 +28,7 @@ export const UpdateUser = async (data) => {
 
 export const getUser = async (data) => {
   const useData = await axios.get(
-    `http://localhost:5000/api/v1/users/${data}`,
+    `https://neurogenai-backend.onrender.com/api/v1/users/${data}`,
     {
       headers: {
         "Content-Type": "application/json",
