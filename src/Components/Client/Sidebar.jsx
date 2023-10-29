@@ -70,7 +70,7 @@ const Sidebar = () => {
         <>
           <Stack
             sx={{
-              width: 245,
+              width: 277,
               background: "#192655",
               height: "100dvh",
               position: isMobile ? "fixed" : "sticky",

@@ -58,7 +58,7 @@ const Dashboard = () => {
       }}
     >
       <Stack
-        sx={{ background: "#192655", height: "10dvh" }}
+        sx={{ background: "#192655", height: "10dvh", width:"100%" }}
         alignItems={"center"}
         justifyContent={"center"}
       >
