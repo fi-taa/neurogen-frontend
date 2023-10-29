@@ -54,7 +54,7 @@ export default function Register() {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    dispatch(setRegister({ data:  formData  }));
+    dispatch(setRegister({ data: { formData } }));
   };
 
   function getStepContent(step) {
