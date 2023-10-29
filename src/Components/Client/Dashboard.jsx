@@ -54,7 +54,7 @@ const Dashboard = () => {
   return (
     <Stack
       sx={{
-        width: isSmallScreen ? "100%" : isMoreSmallScreen ? "100%" : "84%",
+        width: isSmallScreen ? "100%" : isMoreSmallScreen ? "100%" : "100%",
       }}
     >
       <Stack

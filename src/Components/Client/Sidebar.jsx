@@ -57,11 +57,12 @@ const Sidebar = () => {
             sx={{
               padding: "18px 15px",
               background: "#192655",
-              height: "62px",
+              height: "10dvh",
             }}
           >
             <Menu sx={{
-              color:"#fff"
+              color:"#fff",
+              cursor: 'pointer'
             }} onClick={() => setOpenSidebar(!isMobile)} />
           </Box>
         </>
