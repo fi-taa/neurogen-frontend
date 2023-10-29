@@ -35,7 +35,7 @@ const Setting = () => {
   const userId = decodedToken.userId;
 
   useEffect(() => {
-    dispatch(getUser({ data: userId }));
+    dispatch(getUser(userId ));
   }, [dispatch, userId]);
 
   const user = useSelector((state) => state.UserStore.OutputUser);

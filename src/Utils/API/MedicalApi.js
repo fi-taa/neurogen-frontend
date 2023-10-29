@@ -3,7 +3,7 @@ import axios from "axios";
 
 export const MedicalChat = async (data) => {
     //question
-  const useData = await axios.post("https://neurogenai-backend.onrender.com/api/v1/medical/medicalchat", data, {
+  const useData = await axios.post("https://neuronet.onrender.com/api/v1/medical/medicalchat", data, {
     headers: {
       "Content-Type": "application/json",
     },
@@ -15,7 +15,7 @@ export const MedicalChat = async (data) => {
 
 export const getMedicalchathistory = async (data) => {
     //
-  const response = await axios.get(`https://neurogenai-backend.onrender.com/api/v1/medical/medical-chat/${data}`);
+  const response = await axios.get(`https://neuronet.onrender.com/api/v1/medical/medical-chat/${data}`);
 
   if (response.status === 200) {
     return response.data;
