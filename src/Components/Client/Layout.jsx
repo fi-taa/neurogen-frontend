@@ -4,7 +4,7 @@ import Sidebar from './Sidebar'
 
 const Layout = (props) => {
   return (
-    <Stack direction={"row"} className='width'>
+    <Stack direction={"row"}>
         <Sidebar />
         {props.children}
     </Stack>

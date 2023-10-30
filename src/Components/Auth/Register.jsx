@@ -29,7 +29,7 @@ const Register = () => {
         width={"100%"}
         justifyContent={"center"}
       >
-        <ImageListItem sx={{ maxHeight: "10dvh", maxWidth: "10%" }}>
+        <ImageListItem sx={{ maxHeight: "10dvh", maxWidth: "8%" }}>
           <img src={logo} alt="logo" style={{ width: "100%" }} />
         </ImageListItem>
         <Button

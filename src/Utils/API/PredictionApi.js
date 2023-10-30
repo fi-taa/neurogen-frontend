@@ -8,7 +8,6 @@ export const Strokepredictor = async (data) => {
     },
   });
  return useData
- 
 };
 
 export const StrokeRecommendations = async (data) => {
