@@ -67,7 +67,7 @@ const Chat = () => {
 
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/v1/medical/medical-chat",
+        "https://neuronet.onrender.com/api/v1/medical/medical-chat",
         {
           question: question,
           userId,
@@ -75,7 +75,7 @@ const Chat = () => {
       );
 
       const responseData = response.data.response;
-
+          
       newUserMessages.push({
         message: formatText(responseData),
         isQuestion: false,
@@ -84,8 +84,8 @@ const Chat = () => {
       setUserMessages(newUserMessages);
 
       // Scroll to the bottom of the chat after adding a new message
-      const chatContainer = document.getElementById("chat-container");
-      chatContainer.scrollTop = chatContainer.scrollHeight;
+      // const chatContainer = document.getElementById("chat-container");
+      // chatContainer.scrollTop = chatContainer.scrollHeight;
     } catch (error) {
       console.error("Request Error:", error);
     }
